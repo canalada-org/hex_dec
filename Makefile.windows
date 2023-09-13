@@ -1,0 +1,8 @@
+hex_dec.exe:
+	gnatmake -gnatf -IC:\\GNAT\\GtkAda-2.4.0\\INCLUDE\\GTKADA ventana_conversor.adb  -o hex_dec -largs -mwindows
+
+clean:
+	del hex_dec.exe
+
+install: hex_dec.exe
+	copy hex_dec.exe ..\hex_dec

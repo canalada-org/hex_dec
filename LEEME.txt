@@ -1,0 +1,39 @@
+DESCRIPCIóN
+
+hex_dec es un pequeño programa Ada que convierte de hexadecimal a
+decimal y permite imprimir el resultado. Lo escribí para resolver una
+necesidad muy concreta de un amigo. Aunque su utilidad es reducida, lo
+ofrezco aquí a la comunidad canalada.org porque puede servir de
+ejemplo de cómo realizar un programa portable para Windows y GNU/Linux
+con GNAT y GtkAda.
+
+Para realizar la interfaz se ha utilizado Glade, que facilita bastante
+el desarrollo de la interfaz de usuario (quizá a costa de una menor
+mantenibilidad del código, pero eso lo dejaremos para las aplicaciones
+profesionales).
+
+El paquete OS es el encargado de la
+portabilidad en entre sistemas operativos. Utiliza algunos paquetes
+específicos de GNAT, pero supongo que sería fácil portarlo a otros
+compiladores.
+
+COMPILACIóN
+En GNU/Linux asegurate de tener las librerias GtkAda y GNAT instalados
+y ejecuta make dentro del directorio de hex_dec.
+
+En Windows usa el Makefile.windows cambiando
+C:\\GNAT\\GtkAda-2.4.0\\INCLUDE\\GTKADA por el directorio donde tengas
+instalado GtkAda. Alternativamente puedes crear un proyecto desde GPS o
+cualquier otro IDE.
+
+Si usas Emacs, tanto en Windows como en Linux puedes usar el proyecto
+hex_dec.adp incluido.
+
+Si tienes problemas compilándolo puedes dejar un mensaje en el foro
+http://www.canalada.org/foro
+
+LICENCIA
+Se distribuye bajo licencia GPL: ver COPYING.txt.
+
+
+   Gneuromante de canalada.org
